@@ -1,0 +1,252 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    
+}
+.logo
+{
+    height: 200px;
+    width:100px;
+    margin-left: 20px;
+    margin-top: 0 auto;
+}
+.title-head
+{
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+.logo-title
+{
+    margin-top: 30px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* color: white; */
+background: -webkit-linear-gradient(#5a19c9, #8b8989);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.main-banner
+{
+    display: flex;
+}
+
+.head{
+display: flex;
+}
+.nav
+{
+    color: white;
+}
+ul
+{
+    list-style: none;
+   
+}
+.navbar
+{
+    display: flex;
+    gap:3rem;
+    font-size: 1rem;
+    margin-top: 60px;
+    margin-left: 380px;
+    align-items: center;
+   
+}
+.tab
+{
+    /* border: 2px solid white; */
+  padding: 1rem;
+  border-radius: 30px;
+  min-width: max-content;
+  background-color: rgba(46, 46, 46, 0.192);
+ 
+}a{
+    /* color: rgb(220, 220, 153); */
+    color: #d3c8e3;
+    /* background: linear-gradient(to right, #d43874, 
+    #cd7e4a, #d23fd2, #e7d537); 
+-webkit-text-fill-color: transparent; 
+-webkit-background-clip: text; */
+    text-decoration: none; 
+
+}
+.sign{
+    color: white;
+}
+.tab:hover{
+    background-color:rgba(137, 134, 134, 0.137);
+}
+.tabsign
+{
+    padding: 1rem;
+  border-radius: 30px; 
+  background-color: brown;
+  min-width: max-content;
+ 
+}
+.left
+{
+    color: white;
+  max-width: max-content;
+ 
+}
+.content
+{
+    /* height: 50%;
+    width: 1200px; */
+    /* background-color: blue; */
+    margin-top: 120px;
+    margin-left: 60px; 
+    display: flex;
+    
+
+}
+.left-head
+{
+    font-size: 1.5rem;
+    font-weight: 100;
+ 
+}
+.left-main-heading
+{
+    margin-top: 2rem;
+font-size: 3rem;
+font-weight: bold;
+
+}
+.left-desc
+{margin-top: 3rem;
+    font-size: 1rem;
+    max-width:750px ;
+  word-spacing:0.5rem;
+  line-height: 25px;
+}
+.search-bar
+{
+    margin-top: 50px;
+    padding: 15px;
+    width:25rem;
+    border-radius: 30px;
+    border: none;
+    
+}
+.search{
+    color: white;
+    font-size: 0.8rem;
+}
+
+ input:focus{
+   outline: none;
+ }
+.search-button
+{
+    width: 10rem;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(214, 34, 34);
+    margin-left: -100px;
+    /* z-index: 1; */
+    border: none;
+}
+.search-button:hover{
+    background-color: #5a19c9;
+}
+.right
+{
+    /* margin-bottom: 300px; */
+    height: 400px;
+width: 50px;
+    /* gap: 10rem; */
+   /* background-color: #8b8989; */
+}
+.main-img
+{
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+   
+    margin-left: 250px;
+    box-shadow: 1px 1px 8px #b995fc;
+    
+    
+}
+.main-img:hover{
+    transform: scale(1.1);
+    transition:all 1s ease-in-out 0s;
+}
+.button-round
+{
+    border-radius: 50%;
+    padding: 30px;
+    background-color: #5a19c9;
+    color: white;
+    margin-left: 220px;
+    margin-top: -70px;
+border: 2px solid white;
+font-size: 1.5rem;
+}
+.section
+{
+    /* background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-left: 100px;
+}
+.grid-image
+{
+    height: 70px;
+    width: 70px;
+    /* background-color: black; */
+    /* border-radius: 50%; */
+    
+}
+.grid{
+    background-color: rgb(228, 214, 254);
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px white;
+}
+.grid-desc
+{
+    color: rgb(53, 11, 143);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.grid:hover{
+    .grid-desc{
+        color: rgb(45, 44, 44);
+    }
+    .grid-image{
+        transform:rotateY(180deg);
+        transition: all 1s ease 0s;
+    }
+}
+@media screen and (max-width:680px)
+{
+.section{
+    grid-template-columns: repeat(1,1fr);
+}
+}
